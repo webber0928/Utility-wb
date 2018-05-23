@@ -1,0 +1,128 @@
+{
+  "responseId": "32c5c4d6-2b09-4612-8818-ead5c862a43e",
+  "queryResult": {
+     "queryText": "yes",
+     "action": "EnableGuestNetwork.EnableGuestNetwork-yes",
+     "parameters": {},
+     "allRequiredParamsPresent": true,
+     "fulfillmentMessages": [
+        {
+           "text": {
+              "text": [
+                 ""
+              ]
+           }
+        }
+     ],
+     "outputContexts": [
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/actions_capability_screen_output"
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/enableguestnetwork-followup",
+           "lifespanCount": 1,
+           "parameters": {
+              "DeviceName.original": "DIR-2680",
+              "DeviceName": "DIR-2680"
+           }
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/_actions_on_google",
+           "lifespanCount": 98,
+           "parameters": {
+              "data": "{\"ssid\": \"dlink-guest\",\"password\": \"dixka56258\"}"
+           }
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/actions_capability_audio_output"
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/google_assistant_input_type_keyboard"
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/actions_capability_web_browser"
+        },
+        {
+           "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614/contexts/actions_capability_media_response_audio"
+        }
+     ],
+     "intent": {
+        "name": "projects/rd-mydlink-custom-skill/agent/intents/b311abb0-d583-4703-8246-5810da0bb473",
+        "displayName": "EnableGuestNetwork - yes"
+     },
+     "intentDetectionConfidence": 1,
+     "diagnosticInfo": {},
+     "languageCode": "en-us"
+  },
+  "originalDetectIntentRequest": {
+     "source": "google",
+     "version": "2",
+     "payload": {
+        "isInSandbox": true,
+        "surface": {
+           "capabilities": [
+              {
+                 "name": "actions.capability.AUDIO_OUTPUT"
+              },
+              {
+                 "name": "actions.capability.SCREEN_OUTPUT"
+              },
+              {
+                 "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+              },
+              {
+                 "name": "actions.capability.WEB_BROWSER"
+              }
+           ]
+        },
+        "inputs": [
+           {
+              "rawInputs": [
+                 {
+                    "query": "yes",
+                    "inputType": "KEYBOARD"
+                 }
+              ],
+              "arguments": [
+                 {
+                    "rawText": "yes",
+                    "textValue": "yes",
+                    "name": "text"
+                 }
+              ],
+              "intent": "actions.intent.TEXT"
+           }
+        ],
+        "user": {
+           "userStorage": {
+              "data": {}
+           },
+           "lastSeen": "2018-05-16T08:53:35Z",
+           "accessToken": "n3k3hAudqZIcsEZ8CD9pQFr(rd-rdsg)",
+           "locale": "en-US",
+           "userId": "ABwppHFdsvVy-OgYCbfHQrUrqWEiZ_85LlqINw7ZDqaerVWotE2BTA_9_VjBm1Gez-4tsr59Gm8VV6fyynfis5tV3gDf9nQ"
+        },
+        "conversation": {
+           "conversationId": "1526460820614",
+           "type": "ACTIVE",
+           "conversationToken": [
+              "_actions_on_google",
+              "enableguestnetwork-followup"
+           ]
+        },
+        "availableSurfaces": [
+           {
+              "capabilities": [
+                 {
+                    "name": "actions.capability.AUDIO_OUTPUT"
+                 },
+                 {
+                    "name": "actions.capability.SCREEN_OUTPUT"
+                 }
+              ]
+           }
+        ]
+     }
+  },
+  "session": "projects/rd-mydlink-custom-skill/agent/sessions/1526460820614"
+}

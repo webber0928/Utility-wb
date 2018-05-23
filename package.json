@@ -1,0 +1,29 @@
+{
+  "name": "utility-wb",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webber0928/Utility-wb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webber0928/Utility-wb/issues"
+  },
+  "homepage": "https://github.com/webber0928/Utility-wb#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.1.2",
+    "lodash": "^4.17.10",
+    "mocha": "^5.1.1",
+    "supertest": "^3.1.0",
+    "uuid": "^3.2.1"
+  }
+}

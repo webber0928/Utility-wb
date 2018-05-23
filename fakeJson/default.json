@@ -1,0 +1,122 @@
+{
+  "responseId": "82d0a3bb-4d96-4e2d-b548-78d1569405b4",
+  "queryResult":
+  {
+    "queryText": "GOOGLE_ASSISTANT_WELCOME",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages":
+    [
+      {
+        "text":
+        {
+          "text":
+          [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts":
+    [
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/google_assistant_welcome"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/actions_capability_screen_output"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/actions_capability_audio_output"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/google_assistant_input_type_keyboard"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/actions_capability_web_browser"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946/contexts/actions_capability_media_response_audio"
+      },
+      {
+        "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/_actions_on_google",
+        "lifespanCount": 98,
+        "parameters": {}
+      }
+    ],
+    "intent":
+    {
+      "name": "projects/rd-mydlink-custom-skill/agent/intents/6abb1950-d4de-4c2f-bc52-4c392e1e8653",
+      "displayName": "LaunchRequest"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {},
+    "languageCode": "en-us"
+  },
+  "originalDetectIntentRequest":
+  {
+    "source": "google",
+    "version": "2",
+    "payload":
+    {
+      "isInSandbox": true,
+      "surface":
+      {
+        "capabilities":
+        [
+          {
+            "name": "actions.capability.SCREEN_OUTPUT"
+          },
+          {
+            "name": "actions.capability.AUDIO_OUTPUT"
+          },
+          {
+            "name": "actions.capability.WEB_BROWSER"
+          },
+          {
+            "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+          }
+        ]
+      },
+      "inputs":
+      [
+        {
+          "rawInputs":
+          [
+            {
+              "query": "Talk to big wifi",
+              "inputType": "KEYBOARD"
+            }
+          ],
+          "intent": "actions.intent.MAIN"
+        }
+      ],
+      "user":
+      {
+        "lastSeen": "2018-05-14T09:45:19Z",
+        "accessToken": "2-gMLL6FltL0M9ssxflXDtJ(rd-rdsg)",
+        "locale": "en-US",
+        "userId": "ABwppHFdsvVy-OgYCbfHQrUrqWEiZ_85LlqINw7ZDqaerVWotE2BTA_9_VjBm1Gez-4tsr59Gm8VV6fyynfis5tV3gDf9nQ"
+      },
+      "conversation":
+      {
+        "conversationId": "1526291121946",
+        "type": "NEW"
+      },
+      "availableSurfaces":
+      [
+        {
+          "capabilities":
+          [
+            {
+              "name": "actions.capability.SCREEN_OUTPUT"
+            },
+            {
+              "name": "actions.capability.AUDIO_OUTPUT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "session": "projects/rd-mydlink-custom-skill/agent/sessions/1526291121946"
+}

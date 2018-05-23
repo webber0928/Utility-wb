@@ -1,0 +1,115 @@
+{
+    "token": "NqLzinnWxVZd5hmXZbuIGBF(rd-rdsg)",
+    "lang": {
+        "German": "de",
+        "English": "en",
+        "Japanese": "ja"
+    },
+    "intent": {
+        "DISABLE_GUEST_NETWORK_INTENT": {
+            "intentName": "DisableGuestNetwork",
+            "telk": "Stop guest WiFi",
+            "telk-device": "Stop guest WiFi On dir-2680",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "DISABLE_GUEST_NETWORK_INTENT_FOLLOW_YES": {
+            "intentName": "DisableGuestNetwork - yes",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "DISABLE_GUEST_NETWORK_INTENT_FOLLOW_NO": {
+            "intentName": "DisableGuestNetwork - no",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "ENABLE_GUEST_NETWORK_INTENT": {
+            "intentName": "EnableGuestNetwork",
+            "telk": "Enable guest WiFi",
+            "telk-device": "Enable guest WiFi On dir-2680",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "ENABLE_GUEST_NETWORK_INTENT_FOLLOW_YES": {
+            "intentName": "EnableGuestNetwork - yes",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "ENABLE_GUEST_NETWORK_INTENT_FOLLOW_NO": {
+            "intentName": "EnableGuestNetwork - no",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "GET_WIFI_SETTING_INTENT": {
+            "intentName": "GetWifiSetting",
+            "telk": "what is my guest WiFi name",
+            "telk-device": "what is my guest WiFi name for dir-2680",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "GET_WIFI_SETTING_INTENT_FOLLOW_YES": {
+            "intentName": "GetWifiSetting - yes",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "GET_WIFI_SETTING_INTENT_FOLLOW_NO": {
+            "intentName": "GetWifiSetting - no",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "REBOOT_DEVICE_INTENT": {
+            "intentName": "RebootDevice",
+            "telk": "restart my router",
+            "telk-device": "restart dir-2680",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "REBOOT_DEVICE_INTENT_FOLLOW_YES": {
+            "intentName": "RebootDevice - yes",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "REBOOT_DEVICE_INTENT_FOLLOW_NO": {
+            "intentName": "RebootDevice - no",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "UPGRADE_FIRMWARE_INTENT": {
+            "intentName": "UpgradeFirmware",
+            "telk": "update my router's firmware",
+            "telk-device": "update dir-2680",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "UPGRADE_FIRMWARE_INTENT_FOLLOW_YES": {
+            "intentName": "UpgradeFirmware - yes",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        },
+        "UPGRADE_FIRMWARE_INTENT_FOLLOW_NO": {
+            "intentName": "UpgradeFirmware - no",
+            "telk": "",
+            "telk-device": "",
+            "talk-yes": "yes",
+            "talk-no": "no"
+        }
+    }
+}

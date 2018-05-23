@@ -1,0 +1,130 @@
+{
+   "responseId": "0f4376b0-8963-46a6-b81c-cf84c458b9dd",
+   "queryResult": {
+      "queryText": "no",
+      "action": "EnableGuestNetwork.EnableGuestNetwork-no",
+      "parameters": {},
+      "allRequiredParamsPresent": true,
+      "fulfillmentMessages": [
+         {
+            "text": {
+               "text": [
+                  ""
+               ]
+            }
+         }
+      ],
+      "outputContexts": [
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/actions_capability_screen_output"
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/enableguestnetwork-followup",
+            "lifespanCount": 1,
+            "parameters": {
+               "DeviceName.original": "",
+               "DeviceName": ""
+            }
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/_actions_on_google",
+            "lifespanCount": 98,
+            "parameters": {
+               "DeviceName.original": "",
+               "data": {},
+               "DeviceName": ""
+            }
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/actions_capability_audio_output"
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/google_assistant_input_type_keyboard"
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/actions_capability_media_response_audio"
+         },
+         {
+            "name": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653/contexts/actions_capability_web_browser"
+         }
+      ],
+      "intent": {
+         "name": "projects/rd-mydlink-custom-skill/agent/intents/3492258d-b252-4edb-9b5a-103dc209bb91",
+         "displayName": "EnableGuestNetwork - no"
+      },
+      "intentDetectionConfidence": 1,
+      "diagnosticInfo": {},
+      "languageCode": "en-us"
+   },
+   "originalDetectIntentRequest": {
+      "source": "google",
+      "version": "2",
+      "payload": {
+         "isInSandbox": true,
+         "surface": {
+            "capabilities": [
+               {
+                  "name": "actions.capability.AUDIO_OUTPUT"
+               },
+               {
+                  "name": "actions.capability.WEB_BROWSER"
+               },
+               {
+                  "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+               },
+               {
+                  "name": "actions.capability.SCREEN_OUTPUT"
+               }
+            ]
+         },
+         "inputs": [
+            {
+               "rawInputs": [
+                  {
+                     "query": "no",
+                     "inputType": "KEYBOARD"
+                  }
+               ],
+               "arguments": [
+                  {
+                     "rawText": "no",
+                     "textValue": "no",
+                     "name": "text"
+                  }
+               ],
+               "intent": "actions.intent.TEXT"
+            }
+         ],
+         "user": {
+            "userStorage": {
+               "data": {}
+            },
+            "lastSeen": "2018-05-16T07:41:54Z",
+            "accessToken": "n3k3hAudqZIcsEZ8CD9pQFr(rd-rdsg)",
+            "locale": "en-US",
+            "userId": "ABwppHFdsvVy-OgYCbfHQrUrqWEiZ_85LlqINw7ZDqaerVWotE2BTA_9_VjBm1Gez-4tsr59Gm8VV6fyynfis5tV3gDf9nQ"
+         },
+         "conversation": {
+            "conversationId": "1526456516653",
+            "type": "ACTIVE",
+            "conversationToken": [
+               "_actions_on_google",
+               "enableguestnetwork-followup"
+            ]
+         },
+         "availableSurfaces": [
+            {
+               "capabilities": [
+                  {
+                     "name": "actions.capability.AUDIO_OUTPUT"
+                  },
+                  {
+                     "name": "actions.capability.SCREEN_OUTPUT"
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "session": "projects/rd-mydlink-custom-skill/agent/sessions/1526456516653"
+}
