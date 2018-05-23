@@ -1,4 +1,4 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');
@@ -7,10 +7,10 @@ const lib = require('../lib');
 describe('#UpgradeFirmware,', () => {
   const db = new Object;
   describe('[one device]', () => {
-    it.only('upgrade my router', (done) => {
+    it('upgrade my router', (done) => {
       let body = lib.initSend(config.default);
       body = lib.setIntent(body, 'UpgradeFirmware');
-      request
+      lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -30,7 +30,7 @@ describe('#UpgradeFirmware,', () => {
     it('yes', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'UpgradeFirmware - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -46,7 +46,7 @@ describe('#UpgradeFirmware,', () => {
     it('no', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'UpgradeFirmware - no');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -62,7 +62,7 @@ describe('#UpgradeFirmware,', () => {
     it.skip('uncertain', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'UpgradeFirmware - uncertain');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)

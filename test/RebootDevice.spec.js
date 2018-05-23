@@ -1,4 +1,4 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');
@@ -10,7 +10,7 @@ describe('#RebootDevice,', () => {
     it('reboot my router', (done) => {
       let body = lib.initSend(config.default);
       body = lib.setIntent(body, 'RebootDevice');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -27,7 +27,7 @@ describe('#RebootDevice,', () => {
     it('yes', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'RebootDevice - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -43,7 +43,7 @@ describe('#RebootDevice,', () => {
     it('no', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'RebootDevice - no');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -59,7 +59,7 @@ describe('#RebootDevice,', () => {
     it.skip('uncertain', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'RebootDevice - uncertain');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)

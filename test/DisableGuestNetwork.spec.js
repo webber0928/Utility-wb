@@ -1,4 +1,4 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');
@@ -10,7 +10,7 @@ describe('#DisableGuestNetwork,', () => {
     it('disable my guest zone', (done) => {
       let body = lib.initSend(config.default);
       body = lib.setIntent(body, 'DisableGuestNetwork');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)

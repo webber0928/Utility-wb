@@ -1,4 +1,4 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');

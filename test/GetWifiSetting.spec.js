@@ -1,4 +1,4 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');
@@ -10,7 +10,7 @@ describe('#GetWifiSetting,', () => {
     it('what is my guest network credentials?', (done) => {
       let body = lib.initSend(config.default);
       body = lib.setIntent(body, 'GetWifiSetting');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -27,7 +27,7 @@ describe('#GetWifiSetting,', () => {
     it('yes [have password]', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'GetWifiSetting - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -46,7 +46,7 @@ describe('#GetWifiSetting,', () => {
       parametersData = JSON.stringify(parametersData);
       let body = lib.initSend(config.default, {data: parametersData});
       body = lib.setIntent(body, 'GetWifiSetting - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -62,7 +62,7 @@ describe('#GetWifiSetting,', () => {
     it('no', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'GetWifiSetting - no');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -78,7 +78,7 @@ describe('#GetWifiSetting,', () => {
     it.skip('uncertain', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'GetWifiSetting - uncertain');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)

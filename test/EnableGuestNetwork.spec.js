@@ -1,16 +1,16 @@
-const request = require('supertest')('https://rd-rdsg-openapi.auto.mydlink.com');
+ 
 require('chai').should();
 
 const config = require('../fakeJson');
 const lib = require('../lib');
 
-describe('#EnableGuestNetwork,', () => {
+describe.only('#EnableGuestNetwork,', () => {
   const db = new Object;
   describe('[one device]', () => {
     it('enable my guest zone on deviceName', (done) => {
       let body = lib.initSend(config.default);
       body = lib.setIntent(body, 'EnableGuestNetwork');
-      request
+      lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -27,7 +27,7 @@ describe('#EnableGuestNetwork,', () => {
     it('yes [have password]', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'EnableGuestNetwork - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -46,7 +46,7 @@ describe('#EnableGuestNetwork,', () => {
       parametersData = JSON.stringify(parametersData);
       let body = lib.initSend(config.default, {data: parametersData});
       body = lib.setIntent(body, 'EnableGuestNetwork - yes');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -62,7 +62,7 @@ describe('#EnableGuestNetwork,', () => {
     it('no', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'EnableGuestNetwork - no');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
@@ -78,7 +78,7 @@ describe('#EnableGuestNetwork,', () => {
     it.skip('uncertain', (done) => {
       let body = lib.initSend(config.default, db.parameters);
       body = lib.setIntent(body, 'EnableGuestNetwork - uncertain');
-      request
+       lib.request
         .post('/google-home/custom-api')
         .set('Content-Type', 'application/json;charset=utf-8')
         .send(body)
